@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventanaOrdenTrabajo</class>
+ <widget class="QMainWindow" name="ventanaOrdenTrabajo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1171</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ordenes de Trabajo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="nuevaOrdenBoton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NUEVA ORDEN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ORDENES DE TRABAJO</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetOrdenes">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>1141</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>telefono</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>direccion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tipo Servicio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descripcion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Observacion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Entrega</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Materiales</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Monto</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Creacion</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="irAlMenu">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>540</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ir al menu Principal</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1171</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
