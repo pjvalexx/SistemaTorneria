@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>557</width>
     <height>382</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="inventarioLabel">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>250</x>
       <y>20</y>
       <width>181</width>
       <height>41</height>
@@ -32,7 +32,7 @@
      <string>INVENTARIO</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="nuevo_item">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -41,32 +41,58 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(15, 67, 255);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
-     <string>NUEVO ITEM</string>
+     <string>NUEVO</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="botonModificarStock">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>200</y>
+      <y>180</y>
       <width>71</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 249, 69);
+color: rgb(40, 40, 40)</string>
     </property>
     <property name="text">
      <string>STOCK</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="tableWidgetInventario">
     <property name="geometry">
      <rect>
       <x>160</x>
       <y>100</y>
-      <width>471</width>
+      <width>311</width>
       <height>192</height>
      </rect>
     </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
     <column>
      <property name="text">
       <string>Material</string>
@@ -74,14 +100,14 @@
     </column>
     <column>
      <property name="text">
-      <string>Disponible</string>
+      <string>Cantidad</string>
      </property>
     </column>
    </widget>
    <widget class="QPushButton" name="irAlMenu">
     <property name="geometry">
      <rect>
-      <x>670</x>
+      <x>430</x>
       <y>300</y>
       <width>111</width>
       <height>31</height>
@@ -97,7 +123,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>557</width>
      <height>21</height>
     </rect>
    </property>

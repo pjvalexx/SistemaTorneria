@@ -35,12 +35,20 @@ class Conexion:
                 fecha_creacion DATE DEFAULT CURRENT_DATE
             )
         """
-        
+        sql_create_inventario = """
+            CREATE TABLE IF NOT EXISTS inventario (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT NOT NULL,
+                cantidad INTEGER DEFAULT 0
+            )
+        """
+
         # Ejecutar la creación de tablas
         try:
             cur = self.con.cursor()
             cur.execute(sql_create_usuarios)
             cur.execute(sql_create_orden_trabajo)
+            cur.execute(sql_create_inventario)
             self.con.commit()
             cur.close()
             # Llamar a la función para crear el usuario administrador
