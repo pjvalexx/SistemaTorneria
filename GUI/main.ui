@@ -71,7 +71,7 @@
      <string>BIENVENIDO AL SISTEMA</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="reportesBoton">
     <property name="geometry">
      <rect>
       <x>10</x>
